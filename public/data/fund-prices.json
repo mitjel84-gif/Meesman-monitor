@@ -1,11 +1,11 @@
 {
   "fund": "Meesman Aandelen Wereldwijd Totaal",
-  "source": "Meesman handelskoersen-vanaf-2015-01-05.xlsx",
-  "note": "Handelskoersen Serie A, geen totaalrendement. Losse dividenduitkeringsregels op dezelfde datum zijn uitgesloten; dividend is niet herbelegd of bij de koers opgeteld.",
+  "source": "https://www.meesman.nl/media/k5wd2q3j/handelskoersen-vanaf-2015-01-05.xlsx",
+  "note": "Handelskoersen serie A; dividenduitkeringen apart.",
   "prices": [
     {
       "date": "2019-09-20",
-      "a": 50
+      "a": 50.0
     },
     {
       "date": "2019-09-27",
