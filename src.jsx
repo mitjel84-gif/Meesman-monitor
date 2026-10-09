@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import {
   Activity, ArrowDownRight, ArrowUpRight, ChartNoAxesCombined, ChevronRight,
@@ -7,7 +7,7 @@ import {
   X
 } from 'lucide-react'
 import {
-  ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid,
+  ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid,
   ReferenceLine
 } from 'recharts'
 import './style.css'
@@ -79,6 +79,51 @@ function PageHeading({eyebrow, title, description, action}) {
 function DataNotice({children}) {
   return <div className="notice"><ShieldAlert size={19}/><div><b>Live gegevens nog niet aangesloten</b><p>{children}</p></div></div>
 }
+function FundPriceChart({period}) {
+  const [prices, setPrices] = useState([])
+  const [status, setStatus] = useState('loading')
+  useEffect(() => {
+    const controller = new AbortController()
+    fetch(`${import.meta.env.BASE_URL}data/fund-prices.json`, {signal: controller.signal})
+      .then(response => { if (!response.ok) throw new Error('Koersbestand niet gevonden'); return response.json() })
+      .then(data => {
+        if (!Array.isArray(data.prices)) throw new Error('Ongeldig koersbestand')
+        setPrices(data.prices.filter(p => p.date && Number.isFinite(Number(p.a))).sort((a,b) => a.date.localeCompare(b.date)))
+        setStatus('ready')
+      })
+      .catch(error => { if (error.name !== 'AbortError') setStatus('error') })
+    return () => controller.abort()
+  }, [])
+  const visible = useMemo(() => {
+    if (!prices.length) return []
+    const last = new Date(`${prices[prices.length-1].date}T12:00:00`)
+    const start = new Date(last)
+    if (period === 'Dit jaar') start.setMonth(0, 1)
+    else start.setFullYear(start.getFullYear() - (period === '5 jaar' ? 5 : period === '3 jaar' ? 3 : 1))
+    return prices.filter(p => new Date(`${p.date}T12:00:00`) >= start)
+      .map(p => ({date:p.date, koers:Number(p.a)}))
+  }, [prices, period])
+  const lastDate = prices.length ? new Date(`${prices[prices.length-1].date}T12:00:00`).toLocaleDateString('nl-NL') : ''
+  return <>
+    <div className="section-heading"><div><h2>Historische fondskoers</h2><p>Meesman Aandelen Wereldwijd Totaal · serie A · handelskoers in euro</p></div></div>
+    <div className="panel" style={{padding:24}}>
+      <p style={{marginBottom:16}}>Geselecteerde periode: <b>{period}</b> (aanpasbaar bij Analyse instellen)</p>
+      {status === 'loading' && <p>Koersgegevens laden…</p>}
+      {status === 'error' && <p>Koersbestand kon niet worden geladen. Controleer public/data/fund-prices.json.</p>}
+      {status === 'ready' && visible.length > 0 && <>
+        <div style={{width:'100%',height:300}}><ResponsiveContainer width="100%" height="100%"><LineChart data={visible} margin={{top:10,right:16,left:0,bottom:8}}>
+          <CartesianGrid strokeDasharray="3 3" opacity={0.2}/>
+          <XAxis dataKey="date" minTickGap={35} tickFormatter={v=>v.slice(0,7)}/>
+          <YAxis domain={['auto','auto']} width={55} tickFormatter={v=>`€${v}`}/>
+          <Tooltip labelFormatter={v=>new Date(`${v}T12:00:00`).toLocaleDateString('nl-NL')} formatter={v=>[new Intl.NumberFormat('nl-NL',{style:'currency',currency:'EUR'}).format(v),'Koers serie A']}/>
+          <Line type="monotone" dataKey="koers" stroke="#14b8a6" strokeWidth={2.5} dot={false} isAnimationActive={false}/>
+        </LineChart></ResponsiveContainer></div>
+        <p className="small-disclaimer">Laatste koersdatum in bestand: {lastDate}. Historische handelskoersen, geen totaalrendement; dividend is niet verwerkt. Bron: Meesman-koersbestand.</p>
+      </>}
+      {status === 'ready' && visible.length === 0 && <p>Geen koersgegevens beschikbaar voor deze periode.</p>}
+    </div>
+  </>
+}
 function Overview({setPage, period, setPeriod}) {
   const [amount, setAmount] = useState('1000')
   return <>
@@ -95,6 +140,7 @@ function Overview({setPage, period, setPeriod}) {
       <Stat icon={ChartNoAxesCombined} label="Beleggingen" value={holdings.length.toLocaleString('nl-NL')} sub={`Peildatum ${holdingDate}`}/>
       <Stat icon={Wallet} label="Kostenindicatie" value="0,40%" sub="Controleer actuele fondsdocumenten"/>
     </div>
+    <FundPriceChart period={period}/>
     <div className="section-heading"><div><h2>Grootste beleggingen</h2><p>Gewicht in het fonds · officieel overzicht per {holdingDate}</p></div><button className="text-button" onClick={() => setPage('Aandelen')}>Alle posities <ChevronRight size={16}/></button></div>
     <div className="panel holdings-panel">
       {holdings.slice(0,5).map((h,i)=><div className="holding-row" key={h.id}><div className="rank-number">{String(i+1).padStart(2,'0')}</div><div className="company-monogram">{h.name.slice(0,1)}</div><div className="holding-info"><b>{h.name}</b><span>{h.currency}</span><div className="weight-track"><div style={{width:`${h.weight/maxWeight*100}%`}}/></div></div><div className="holding-weight">{formatWeight(h.weight)}</div></div>)}
