@@ -84,7 +84,7 @@ function FundPriceChart({period}) {
   const [status, setStatus] = useState('loading')
   useEffect(() => {
     const controller = new AbortController()
-    fetch(`${import.meta.env.BASE_URL}data/fund-prices.json`, {signal: controller.signal})
+    fetch(`${import.meta.env.BASE_URL}data/fund-prices.json?v=2`, {signal: controller.signal})
       .then(response => { if (!response.ok) throw new Error('Koersbestand niet gevonden'); return response.json() })
       .then(data => {
         if (!Array.isArray(data.prices)) throw new Error('Ongeldig koersbestand')
