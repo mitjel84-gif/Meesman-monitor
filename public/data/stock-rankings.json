@@ -1,0 +1,415 @@
+{
+  "fund": "Meesman Aandelen Wereldwijd Totaal",
+  "holdingsDate": "2025-12-31",
+  "generatedAt": "2026-10-09T19:55:21.590227+00:00",
+  "period": "ongeveer 1 maand (30 kalenderdagen, handelsdagen)",
+  "method": "Aangepaste slotkoersen in lokale noteringsvaluta; geen valutaomrekening naar EUR",
+  "universeCount": 100,
+  "calculatedCount": 0,
+  "complete": false,
+  "status": "incomplete",
+  "topGainers": [],
+  "topLosers": [],
+  "skipped": [
+    {
+      "name": "NVIDIA CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "APPLE INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "MICROSOFT CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ALPHABET INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "AMAZON COM INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "BROADCOM INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "META PLATFORMS INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "TESLA INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "TAIWAN SEMICONDUCTOR MANUFACTURING",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "JPMORGAN CHASE",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ELI LILLY",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "BERKSHIRE HATHAWAY INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "VISA INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "EXXON MOBIL CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "JOHNSON & JOHNSON",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "WALMART INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "MASTERCARD INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "TENCENT HOLDINGS LTD",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ASML HOLDING NV",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "PALANTIR TECHNOLOGIES INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ABBVIE INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "NETFLIX INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "SAMSUNG ELECTRONICS LTD",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "BANK OF AMERICA CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "COSTCO WHOLESALE CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ADVANCED MICRO DEVICES INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "HOME DEPOT INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "PROCTER & GAMBLE",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ORACLE CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "MICRON TECHNOLOGY INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ALIBABA GROUP HOLDING LTD",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "CISCO SYSTEMS INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "UNITEDHEALTH GROUP INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "WELLS FARGO",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ROCHE HOLDING PAR AG",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ASTRAZENECA PLC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "COCA-COLA",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "INTERNATIONAL BUSINESS MACHINES CO",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "HSBC HOLDINGS PLC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "CATERPILLAR INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "GOLDMAN SACHS GROUP INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "NOVARTIS AG",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "MERCK & CO INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "NESTLE SA",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "SAP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "SALESFORCE INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "SK HYNIX INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ROYAL BANK OF CANADA",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "MCDONALDS CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ABBOTT LABORATORIES",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "THERMO FISHER SCIENTIFIC INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "LAM RESEARCH CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "CITIGROUP INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "SIEMENS N AG",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "MORGAN STANLEY",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "SHELL PLC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "AMERICAN EXPRESS",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "APPLIED MATERIAL INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "WALT DISNEY",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "TOYOTA MOTOR CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "INTUITIVE SURGICAL INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "LINDE PLC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "PEPSICO INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "SHOPIFY  INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "LVMH",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "INTUIT INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "QUALCOMM INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "MITSUBISHI UFJ FINANCIAL GROUP INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "GE VERNOVA INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "COMMONWEALTH BANK OF AUSTRALIA",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "AT&T INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ALLIANZ",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "BANCO SANTANDER SA",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "AMGEN INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "BOOKING HOLDINGS INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "CHARLES SCHWAB CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "VERIZON COMMUNICATIONS INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "TJX INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "INTEL CORPORATION CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ACCENTURE PLC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "NOVO NORDISK",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "NEXTERA ENERGY INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "S&P GLOBAL INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "AMPHENOL CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "UBER TECHNOLOGIES INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "KLA CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "TORONTO DOMINION",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "SERVICENOW INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "TEXAS INSTRUMENT INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "BLACKROCK INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "SONY GROUP CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "BHP GROUP LTD",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "APPLOVIN CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "CAPITAL ONE FINANCIAL CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "GILEAD SCIENCES INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "SCHNEIDER ELECTRIC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "DANAHER CORP",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "UBS GROUP AG",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "ADOBE INC",
+      "reason": "Beurscode nog niet gecontroleerd"
+    },
+    {
+      "name": "HITACHI LTD",
+      "reason": "Beurscode nog niet gecontroleerd"
+    }
+  ]
+}
