@@ -141,19 +141,7 @@ function Overview({setPage, period, setPeriod}) {
       <Stat icon={Wallet} label="Kostenindicatie" value="0,40%" sub="Controleer actuele fondsdocumenten"/>
     </div>
     <FundPriceChart period={period}/>
-    <div className="panel" style={{padding: '20px', marginTop: '20px', marginBottom: '20px'}}>
-  <h2>Dividendoverzicht – Serie A</h2>
-  <p>Historische dividenduitkeringen per participatie.</p>
-  <p><strong>Totaal uitgekeerd: € 4,4816</strong></p>
-  <p>2026: € 0,8340</p>
-  <p>2025: € 0,9387</p>
-  <p>2024: € 0,5928</p>
-  <p>2023: € 0,7817</p>
-  <p>2022: € 0,5140</p>
-  <p>2021: € 0,3497</p>
-  <p>2020: € 0,4707</p>
-  <small>Bedragen per participatie, niet jouw persoonlijke dividendontvangsten.</small>
-</div>
+  <DividendOverview/>
     <div className="section-heading"><div><h2>Grootste beleggingen</h2><p>Gewicht in het fonds · officieel overzicht per {holdingDate}</p></div><button className="text-button" onClick={() => setPage('Aandelen')}>Alle posities <ChevronRight size={16}/></button></div>
     <div className="panel holdings-panel">
       {holdings.slice(0,5).map((h,i)=><div className="holding-row" key={h.id}><div className="rank-number">{String(i+1).padStart(2,'0')}</div><div className="company-monogram">{h.name.slice(0,1)}</div><div className="holding-info"><b>{h.name}</b><span>{h.currency}</span><div className="weight-track"><div style={{width:`${h.weight/maxWeight*100}%`}}/></div></div><div className="holding-weight">{formatWeight(h.weight)}</div></div>)}
@@ -197,3 +185,68 @@ function Settings({period,setPeriod,metric,setMetric,ranking,setRanking}) {
 }
 
 createRoot(document.getElementById('root')).render(<App/>)
+function DividendOverview() {
+  const [dividends, setDividends] = useState([]);
+  const [status, setStatus] = useState('loading');
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    fetch(${import.meta.env.BASE_URL}data/fund-dividends.json, {
+      signal: controller.signal,
+      cache: 'no-store'
+    })
+      .then(response => {
+        if (!response.ok) throw new Error('Dividendbestand niet gevonden');
+        return response.json();
+      })
+      .then(data => {
+        if (data.series !== 'A' || !Array.isArray(data.dividends)) {
+          throw new Error('Ongeldig dividendbestand');
+        }
+        setDividends(data.dividends);
+        setStatus('ready');
+      })
+      .catch(error => {
+        if (error.name !== 'AbortError') setStatus('error');
+      });
+
+    return () => controller.abort();
+  }, []);
+
+  const perYear = {};
+
+  for (const item of dividends) {
+    const year = String(item.date).slice(0, 4);
+    const amount = Number(item.amount);
+
+    if (!/^\d{4}$/.test(year) || !Number.isFinite(amount)) continue;
+    perYear[year] = (perYear[year] || 0) + amount;
+  }
+
+  const total = Object.values(perYear).reduce((sum, value) => sum + value, 0);
+  const euro = value => € ${value.toFixed(4).replace('.', ',')};
+
+  return (
+    <div className="panel" style={{padding: '20px', marginTop: '20px', marginBottom: '20px'}}>
+      <h2>Dividendoverzicht – Serie A</h2>
+      <p>Historische dividenduitkeringen per participatie.</p>
+
+      {status === 'loading' && <p>Dividendgegevens laden...</p>}
+      {status === 'error' && <p>Dividendgegevens konden niet worden geladen.</p>}
+
+      {status === 'ready' && (
+        <>
+          <p><strong>Totaal uitgekeerd: {euro(total)}</strong></p>
+          {Object.entries(perYear)
+            .sort(([a], [b]) => Number(b) - Number(a))
+            .map(([year, amount]) => (
+              <p key={year}>{year}: {euro(amount)}</p>
+            ))}
+        </>
+      )}
+
+      <small>Bedragen per participatie, niet jouw persoonlijke dividendontvangsten.</small>
+    </div>
+  );
+}
