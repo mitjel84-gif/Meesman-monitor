@@ -192,7 +192,7 @@ function DividendOverview() {
   useEffect(() => {
     const controller = new AbortController();
 
-    fetch(${import.meta.env.BASE_URL}data/fund-dividends.json, {
+    fetch(import.meta.env.BASE_URL + 'data/fund-dividends.json', {
       signal: controller.signal,
       cache: 'no-store'
     })
