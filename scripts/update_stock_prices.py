@@ -85,5 +85,5 @@ def main():
         print('LET OP: ranglijsten zijn onvolledig; publiceer niet als volledige Top 100.')
 
 
-if _name_ == '_main_':
+if __name__ == "__main__":
     main()
