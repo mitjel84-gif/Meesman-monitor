@@ -141,6 +141,7 @@ function Overview({setPage, period, setPeriod}) {
       <Stat icon={Wallet} label="Kostenindicatie" value="0,40%" sub="Controleer actuele fondsdocumenten"/>
     </div>
     <FundPriceChart period={period}/>
+    <TotalReturnChart period={period}/>
   <DividendOverview/>
     <div className="section-heading"><div><h2>Grootste beleggingen</h2><p>Gewicht in het fonds · officieel overzicht per {holdingDate}</p></div><button className="text-button" onClick={() => setPage('Aandelen')}>Alle posities <ChevronRight size={16}/></button></div>
     <div className="panel holdings-panel">
@@ -247,6 +248,173 @@ function DividendOverview() {
       )}
 
       <small>Bedragen per participatie, niet jouw persoonlijke dividendontvangsten.</small>
+    </div>
+  );
+}
+function TotalReturnChart({ period }) {
+  const [data, setData] = useState([]);
+  const [status, setStatus] = useState('loading');
+
+  useEffect(() => {
+    const controller = new AbortController();
+    const base = import.meta.env.BASE_URL;
+
+    Promise.all([
+      fetch(base + 'data/fund-prices.json', {
+        signal: controller.signal,
+        cache: 'no-store'
+      }).then(r => {
+        if (!r.ok) throw new Error('Koersen ontbreken');
+        return r.json();
+      }),
+      fetch(base + 'data/fund-dividends.json', {
+        signal: controller.signal,
+        cache: 'no-store'
+      }).then(r => {
+        if (!r.ok) throw new Error('Dividenden ontbreken');
+        return r.json();
+      })
+    ])
+      .then(([priceData, dividendData]) => {
+        if (!Array.isArray(priceData.prices) ||
+            dividendData.series !== 'A' ||
+            !Array.isArray(dividendData.dividends)) {
+          throw new Error('Ongeldige gegevens');
+        }
+
+        const dividendsByDate = {};
+
+        for (const item of dividendData.dividends) {
+          const amount = Number(item.amount);
+          if (!Number.isFinite(amount) || amount < 0) continue;
+          dividendsByDate[item.date] =
+            (dividendsByDate[item.date] || 0) + amount;
+        }
+
+        const prices = priceData.prices
+          .filter(p => p.date && Number(p.a) > 0)
+          .sort((a, b) => a.date.localeCompare(b.date));
+
+        if (prices.length < 2) {
+          throw new Error('Te weinig koersen');
+        }
+
+        let index = 100;
+        const result = [{
+          date: prices[0].date,
+          koers: 100,
+          totaal: 100
+        }];
+
+        const startPrice = Number(prices[0].a);
+
+        for (let i = 1; i < prices.length; i++) {
+          const previous = Number(prices[i - 1].a);
+          const current = Number(prices[i].a);
+          const dividend = dividendsByDate[prices[i].date] || 0;
+
+          index *= (current + dividend) / previous;
+
+          result.push({
+            date: prices[i].date,
+            koers: (current / startPrice) * 100,
+            totaal: index
+          });
+        }
+
+        setData(result);
+        setStatus('ready');
+      })
+      .catch(error => {
+        if (error.name !== 'AbortError') setStatus('error');
+      });
+
+    return () => controller.abort();
+  }, []);
+
+  const visible = useMemo(() => {
+    if (!data.length) return [];
+
+    if (period === 'alles' || period === 'all') return data;
+
+    const years = {
+      '1 jaar': 1,
+      '3 jaar': 3,
+      '5 jaar': 5,
+      '1j': 1,
+      '3j': 3,
+      '5j': 5
+    };
+
+    const count = years[period];
+    if (!count) return data;
+
+    const last = new Date(data[data.length - 1].date + 'T12:00:00');
+    const start = new Date(last);
+    start.setFullYear(start.getFullYear() - count);
+
+    return data.filter(item =>
+      new Date(item.date + 'T12:00:00') >= start
+    );
+  }, [data, period]);
+
+  return (
+    <div className="panel" style={{
+      padding: '20px',
+      marginTop: '20px',
+      marginBottom: '20px'
+    }}>
+      <h2>Totaalrendement inclusief dividend – Serie A</h2>
+      <p>Vergelijking van koersontwikkeling en berekend rendement met herbelegd dividend.</p>
+
+      {status === 'loading' && <p>Rendement berekenen...</p>}
+      {status === 'error' && <p>Rendementgegevens konden niet worden geladen.</p>}
+
+      {status === 'ready' && visible.length > 0 && (
+        <div style={{width: '100%', height: 320}}>
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={visible}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis
+                dataKey="date"
+                tickFormatter={value => value.slice(0, 7)}
+                minTickGap={35}
+              />
+              <YAxis domain={['auto', 'auto']} />
+              <Tooltip
+                formatter={(value, name) => [
+                  Number(value).toFixed(2).replace('.', ','),
+                  name
+                ]}
+              />
+              <Line
+                type="monotone"
+                dataKey="koers"
+                name="Koersindex"
+                stroke="#64748b"
+                strokeWidth={2}
+                dot={false}
+                isAnimationActive={false}
+              />
+              <Line
+                type="monotone"
+                dataKey="totaal"
+                name="Inclusief dividend"
+                stroke="#16a34a"
+                strokeWidth={2.5}
+                dot={false}
+                isAnimationActive={false}
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+      )}
+
+      <small>
+        Beide lijnen starten op index 100 bij de eerste beschikbare koers.
+        Het totaalrendement is een benadering met herbelegd dividend,
+        zonder belastingen of transactiekosten. Geen officiële Meesman-rendementsreeks.
+      </small>
     </div>
   );
 }
