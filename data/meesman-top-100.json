@@ -1,0 +1,809 @@
+{
+  "fund": "Meesman Aandelen Wereldwijd Totaal",
+  "fundIsin": "NL0013689110",
+  "holdingsDate": "2025-12-31",
+  "selection": "100 grootste unieke bedrijfsnamen, gewichten van gelijknamige posities opgeteld",
+  "priceDataStatus": "not_connected",
+  "holdings": [
+    {
+      "name": "NVIDIA CORP",
+      "weightPercent": 4.679,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "APPLE INC",
+      "weightPercent": 4.1654,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "MICROSOFT CORP",
+      "weightPercent": 3.5259,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ALPHABET INC",
+      "weightPercent": 3.4625,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 2
+    },
+    {
+      "name": "AMAZON COM INC",
+      "weightPercent": 2.2874,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "BROADCOM INC",
+      "weightPercent": 1.6025,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "META PLATFORMS INC",
+      "weightPercent": 1.4782,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "TESLA INC",
+      "weightPercent": 1.3117,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "TAIWAN SEMICONDUCTOR MANUFACTURING",
+      "weightPercent": 1.2356,
+      "currencies": [
+        "TWD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "JPMORGAN CHASE",
+      "weightPercent": 0.9133,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ELI LILLY",
+      "weightPercent": 0.8911,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "BERKSHIRE HATHAWAY INC",
+      "weightPercent": 0.7165,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "VISA INC",
+      "weightPercent": 0.6157,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "EXXON MOBIL CORP",
+      "weightPercent": 0.5298,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "JOHNSON & JOHNSON",
+      "weightPercent": 0.5147,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "WALMART INC",
+      "weightPercent": 0.5045,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "MASTERCARD INC",
+      "weightPercent": 0.5024,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "TENCENT HOLDINGS LTD",
+      "weightPercent": 0.5013,
+      "currencies": [
+        "HKD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ASML HOLDING NV",
+      "weightPercent": 0.4361,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "PALANTIR TECHNOLOGIES INC",
+      "weightPercent": 0.4172,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ABBVIE INC",
+      "weightPercent": 0.4162,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "NETFLIX INC",
+      "weightPercent": 0.4109,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "SAMSUNG ELECTRONICS LTD",
+      "weightPercent": 0.4007,
+      "currencies": [
+        "KRW"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "BANK OF AMERICA CORP",
+      "weightPercent": 0.399,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "COSTCO WHOLESALE CORP",
+      "weightPercent": 0.394,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ADVANCED MICRO DEVICES INC",
+      "weightPercent": 0.3578,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "HOME DEPOT INC",
+      "weightPercent": 0.3529,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "PROCTER & GAMBLE",
+      "weightPercent": 0.3455,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ORACLE CORP",
+      "weightPercent": 0.3431,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "MICRON TECHNOLOGY INC",
+      "weightPercent": 0.3315,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ALIBABA GROUP HOLDING LTD",
+      "weightPercent": 0.3204,
+      "currencies": [
+        "HKD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "CISCO SYSTEMS INC",
+      "weightPercent": 0.3133,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "UNITEDHEALTH GROUP INC",
+      "weightPercent": 0.3096,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "WELLS FARGO",
+      "weightPercent": 0.3072,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ROCHE HOLDING PAR AG",
+      "weightPercent": 0.301,
+      "currencies": [
+        "CHF"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ASTRAZENECA PLC",
+      "weightPercent": 0.2958,
+      "currencies": [
+        "GBP"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "COCA-COLA",
+      "weightPercent": 0.2958,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "INTERNATIONAL BUSINESS MACHINES CO",
+      "weightPercent": 0.2837,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "HSBC HOLDINGS PLC",
+      "weightPercent": 0.2814,
+      "currencies": [
+        "GBP"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "CATERPILLAR INC",
+      "weightPercent": 0.2758,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "GOLDMAN SACHS GROUP INC",
+      "weightPercent": 0.2741,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "NOVARTIS AG",
+      "weightPercent": 0.2721,
+      "currencies": [
+        "CHF"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "MERCK & CO INC",
+      "weightPercent": 0.272,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "NESTLE SA",
+      "weightPercent": 0.2652,
+      "currencies": [
+        "CHF"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "SAP",
+      "weightPercent": 0.2647,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "SALESFORCE INC",
+      "weightPercent": 0.2599,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "SK HYNIX INC",
+      "weightPercent": 0.2509,
+      "currencies": [
+        "KRW"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ROYAL BANK OF CANADA",
+      "weightPercent": 0.2481,
+      "currencies": [
+        "CAD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "MCDONALDS CORP",
+      "weightPercent": 0.2255,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ABBOTT LABORATORIES",
+      "weightPercent": 0.2254,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "THERMO FISHER SCIENTIFIC INC",
+      "weightPercent": 0.2248,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "LAM RESEARCH CORP",
+      "weightPercent": 0.223,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "CITIGROUP INC",
+      "weightPercent": 0.2217,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "SIEMENS N AG",
+      "weightPercent": 0.2208,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "MORGAN STANLEY",
+      "weightPercent": 0.2197,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "SHELL PLC",
+      "weightPercent": 0.2192,
+      "currencies": [
+        "GBP"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "AMERICAN EXPRESS",
+      "weightPercent": 0.2135,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "APPLIED MATERIAL INC",
+      "weightPercent": 0.2124,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "WALT DISNEY",
+      "weightPercent": 0.2103,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "TOYOTA MOTOR CORP",
+      "weightPercent": 0.2089,
+      "currencies": [
+        "JPY"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "INTUITIVE SURGICAL INC",
+      "weightPercent": 0.2087,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "LINDE PLC",
+      "weightPercent": 0.2068,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "PEPSICO INC",
+      "weightPercent": 0.2028,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "SHOPIFY  INC",
+      "weightPercent": 0.2022,
+      "currencies": [
+        "CAD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "LVMH",
+      "weightPercent": 0.1953,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "INTUIT INC",
+      "weightPercent": 0.1909,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "QUALCOMM INC",
+      "weightPercent": 0.1905,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "MITSUBISHI UFJ FINANCIAL GROUP INC",
+      "weightPercent": 0.1885,
+      "currencies": [
+        "JPY"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "GE VERNOVA INC",
+      "weightPercent": 0.1844,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "COMMONWEALTH BANK OF AUSTRALIA",
+      "weightPercent": 0.1843,
+      "currencies": [
+        "AUD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "AT&T INC",
+      "weightPercent": 0.1839,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ALLIANZ",
+      "weightPercent": 0.1829,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "BANCO SANTANDER SA",
+      "weightPercent": 0.1827,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "AMGEN INC",
+      "weightPercent": 0.1817,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "BOOKING HOLDINGS INC",
+      "weightPercent": 0.18,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "CHARLES SCHWAB CORP",
+      "weightPercent": 0.1782,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "VERIZON COMMUNICATIONS INC",
+      "weightPercent": 0.1775,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "TJX INC",
+      "weightPercent": 0.177,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "INTEL CORPORATION CORP",
+      "weightPercent": 0.1734,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ACCENTURE PLC",
+      "weightPercent": 0.1705,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "NOVO NORDISK",
+      "weightPercent": 0.1703,
+      "currencies": [
+        "DKK"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "NEXTERA ENERGY INC",
+      "weightPercent": 0.1699,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "S&P GLOBAL INC",
+      "weightPercent": 0.1698,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "AMPHENOL CORP",
+      "weightPercent": 0.1694,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "UBER TECHNOLOGIES INC",
+      "weightPercent": 0.1675,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "KLA CORP",
+      "weightPercent": 0.1665,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "TORONTO DOMINION",
+      "weightPercent": 0.1663,
+      "currencies": [
+        "CAD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "SERVICENOW INC",
+      "weightPercent": 0.1658,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "TEXAS INSTRUMENT INC",
+      "weightPercent": 0.1636,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "BLACKROCK INC",
+      "weightPercent": 0.1626,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "SONY GROUP CORP",
+      "weightPercent": 0.1621,
+      "currencies": [
+        "JPY"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "BHP GROUP LTD",
+      "weightPercent": 0.16,
+      "currencies": [
+        "AUD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "APPLOVIN CORP",
+      "weightPercent": 0.1593,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "CAPITAL ONE FINANCIAL CORP",
+      "weightPercent": 0.1585,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "GILEAD SCIENCES INC",
+      "weightPercent": 0.1584,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "SCHNEIDER ELECTRIC",
+      "weightPercent": 0.1563,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "DANAHER CORP",
+      "weightPercent": 0.1534,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "UBS GROUP AG",
+      "weightPercent": 0.152,
+      "currencies": [
+        "CHF"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "ADOBE INC",
+      "weightPercent": 0.1518,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1
+    },
+    {
+      "name": "HITACHI LTD",
+      "weightPercent": 0.1487,
+      "currencies": [
+        "JPY"
+      ],
+      "positions": 1
+    }
+  ]
+}
