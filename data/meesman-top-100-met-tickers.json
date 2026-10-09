@@ -24,7 +24,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "AAPL",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -35,7 +35,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "MSFT",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -46,7 +46,7 @@
       ],
       "positions": 2,
       "tickerCandidate": "GOOGL",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -57,7 +57,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "AMZN",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -68,7 +68,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "AVGO",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -79,7 +79,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "META",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -90,7 +90,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "TSLA",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -101,7 +101,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "2330.TW",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -112,7 +112,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "JPM",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -123,7 +123,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "LLY",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -134,7 +134,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "BRK-B",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -145,7 +145,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "V",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -167,7 +167,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "JNJ",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -178,7 +178,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "WMT",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -189,7 +189,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "MA",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -200,7 +200,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "0700.HK",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -211,7 +211,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "ASML.AS",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -222,7 +222,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "PLTR",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -233,7 +233,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "ABBV",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -244,7 +244,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "NFLX",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -255,7 +255,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "005930.KS",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -266,7 +266,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "BAC",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -277,7 +277,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "COST",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -288,7 +288,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "AMD",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -299,7 +299,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "HD",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -310,7 +310,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "PG",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -321,7 +321,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "ORCL",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -332,7 +332,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "MU",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -343,7 +343,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "9988.HK",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -354,7 +354,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "CSCO",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -365,7 +365,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "UNH",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -376,7 +376,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "WFC",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -398,7 +398,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "AZN.L",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -409,7 +409,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "KO",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -420,7 +420,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "IBM",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -431,7 +431,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "HSBA.L",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -442,7 +442,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "CAT",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -453,7 +453,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "GS",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -464,7 +464,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "NOVN.SW",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -475,7 +475,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "MRK",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -508,7 +508,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "CRM",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -519,7 +519,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "000660.KS",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -530,7 +530,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "RY.TO",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -552,7 +552,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "ABT",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -563,7 +563,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "TMO",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -574,7 +574,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "LRCX",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -585,7 +585,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "C",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -607,7 +607,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "MS",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -618,7 +618,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "SHEL.L",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -629,7 +629,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "AXP",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -651,7 +651,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "DIS",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -662,7 +662,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "7203.T",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -673,7 +673,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "ISRG",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -684,7 +684,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "LIN",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -695,7 +695,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "PEP",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -706,7 +706,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "SHOP.TO",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -728,7 +728,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "INTU",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -739,7 +739,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "QCOM",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -750,7 +750,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "8306.T",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -761,7 +761,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "GEV",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -772,7 +772,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "CBA.AX",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -783,7 +783,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "T",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -794,7 +794,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "ALV.DE",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -805,7 +805,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "SAN.MC",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -816,7 +816,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "AMGN",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -827,7 +827,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "BKNG",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -838,7 +838,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "SCHW",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -849,7 +849,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "VZ",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -871,7 +871,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "INTC",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -882,7 +882,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "ACN",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -893,7 +893,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "NOVO-B.CO",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -904,7 +904,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "NEE",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -915,7 +915,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "SPGI",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -926,7 +926,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "APH",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -937,7 +937,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "UBER",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -948,7 +948,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "KLAC",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -959,7 +959,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "TD.TO",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -970,7 +970,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "NOW",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -992,7 +992,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "BLK",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -1003,7 +1003,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "6758.T",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -1014,7 +1014,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "BHP.AX",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -1025,7 +1025,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "APP",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -1036,7 +1036,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "COF",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -1047,7 +1047,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "GILD",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -1058,7 +1058,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "SU.PA",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -1069,7 +1069,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "DHR",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -1080,7 +1080,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "UBSG.SW",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -1091,7 +1091,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "ADBE",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
@@ -1102,7 +1102,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "6501.T",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     }
   ],
