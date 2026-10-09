@@ -230,7 +230,7 @@ function Rankings({ ranking, setRanking }) {
 
             return (
               <div
-                key={${item.ticker || item.name}-${index}}
+                key={(item.ticker || item.name) + '-' + index}
                 style={{
                   display: 'flex',
                   justifyContent: 'space-between',
