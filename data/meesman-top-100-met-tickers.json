@@ -1,0 +1,1116 @@
+{
+  "fund": "Meesman Aandelen Wereldwijd Totaal",
+  "fundIsin": "NL0013689110",
+  "holdingsDate": "2025-12-31",
+  "selection": "100 grootste unieke bedrijfsnamen, gewichten van gelijknamige posities opgeteld",
+  "priceDataStatus": "not_connected",
+  "holdings": [
+    {
+      "name": "NVIDIA CORP",
+      "weightPercent": 4.679,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "NVDA",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "APPLE INC",
+      "weightPercent": 4.1654,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "AAPL",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "MICROSOFT CORP",
+      "weightPercent": 3.5259,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "MSFT",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ALPHABET INC",
+      "weightPercent": 3.4625,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 2,
+      "tickerCandidate": "GOOGL",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "AMAZON COM INC",
+      "weightPercent": 2.2874,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "AMZN",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "BROADCOM INC",
+      "weightPercent": 1.6025,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "AVGO",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "META PLATFORMS INC",
+      "weightPercent": 1.4782,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "META",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "TESLA INC",
+      "weightPercent": 1.3117,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "TSLA",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "TAIWAN SEMICONDUCTOR MANUFACTURING",
+      "weightPercent": 1.2356,
+      "currencies": [
+        "TWD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "2330.TW",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "JPMORGAN CHASE",
+      "weightPercent": 0.9133,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "JPM",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ELI LILLY",
+      "weightPercent": 0.8911,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "LLY",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "BERKSHIRE HATHAWAY INC",
+      "weightPercent": 0.7165,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "BRK-B",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "VISA INC",
+      "weightPercent": 0.6157,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "V",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "EXXON MOBIL CORP",
+      "weightPercent": 0.5298,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "XOM",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "JOHNSON & JOHNSON",
+      "weightPercent": 0.5147,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "JNJ",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "WALMART INC",
+      "weightPercent": 0.5045,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "WMT",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "MASTERCARD INC",
+      "weightPercent": 0.5024,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "MA",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "TENCENT HOLDINGS LTD",
+      "weightPercent": 0.5013,
+      "currencies": [
+        "HKD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "0700.HK",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ASML HOLDING NV",
+      "weightPercent": 0.4361,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1,
+      "tickerCandidate": "ASML.AS",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "PALANTIR TECHNOLOGIES INC",
+      "weightPercent": 0.4172,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "PLTR",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ABBVIE INC",
+      "weightPercent": 0.4162,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "ABBV",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "NETFLIX INC",
+      "weightPercent": 0.4109,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "NFLX",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "SAMSUNG ELECTRONICS LTD",
+      "weightPercent": 0.4007,
+      "currencies": [
+        "KRW"
+      ],
+      "positions": 1,
+      "tickerCandidate": "005930.KS",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "BANK OF AMERICA CORP",
+      "weightPercent": 0.399,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "BAC",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "COSTCO WHOLESALE CORP",
+      "weightPercent": 0.394,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "COST",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ADVANCED MICRO DEVICES INC",
+      "weightPercent": 0.3578,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "AMD",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "HOME DEPOT INC",
+      "weightPercent": 0.3529,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "HD",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "PROCTER & GAMBLE",
+      "weightPercent": 0.3455,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "PG",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ORACLE CORP",
+      "weightPercent": 0.3431,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "ORCL",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "MICRON TECHNOLOGY INC",
+      "weightPercent": 0.3315,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "MU",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ALIBABA GROUP HOLDING LTD",
+      "weightPercent": 0.3204,
+      "currencies": [
+        "HKD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "9988.HK",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "CISCO SYSTEMS INC",
+      "weightPercent": 0.3133,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "CSCO",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "UNITEDHEALTH GROUP INC",
+      "weightPercent": 0.3096,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "UNH",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "WELLS FARGO",
+      "weightPercent": 0.3072,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "WFC",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ROCHE HOLDING PAR AG",
+      "weightPercent": 0.301,
+      "currencies": [
+        "CHF"
+      ],
+      "positions": 1,
+      "tickerCandidate": "ROG.SW",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ASTRAZENECA PLC",
+      "weightPercent": 0.2958,
+      "currencies": [
+        "GBP"
+      ],
+      "positions": 1,
+      "tickerCandidate": "AZN.L",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "COCA-COLA",
+      "weightPercent": 0.2958,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "KO",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "INTERNATIONAL BUSINESS MACHINES CO",
+      "weightPercent": 0.2837,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "IBM",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "HSBC HOLDINGS PLC",
+      "weightPercent": 0.2814,
+      "currencies": [
+        "GBP"
+      ],
+      "positions": 1,
+      "tickerCandidate": "HSBA.L",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "CATERPILLAR INC",
+      "weightPercent": 0.2758,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "CAT",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "GOLDMAN SACHS GROUP INC",
+      "weightPercent": 0.2741,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "GS",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "NOVARTIS AG",
+      "weightPercent": 0.2721,
+      "currencies": [
+        "CHF"
+      ],
+      "positions": 1,
+      "tickerCandidate": "NOVN.SW",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "MERCK & CO INC",
+      "weightPercent": 0.272,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "MRK",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "NESTLE SA",
+      "weightPercent": 0.2652,
+      "currencies": [
+        "CHF"
+      ],
+      "positions": 1,
+      "tickerCandidate": "NESN.SW",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "SAP",
+      "weightPercent": 0.2647,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1,
+      "tickerCandidate": "SAP.DE",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "SALESFORCE INC",
+      "weightPercent": 0.2599,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "CRM",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "SK HYNIX INC",
+      "weightPercent": 0.2509,
+      "currencies": [
+        "KRW"
+      ],
+      "positions": 1,
+      "tickerCandidate": "000660.KS",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ROYAL BANK OF CANADA",
+      "weightPercent": 0.2481,
+      "currencies": [
+        "CAD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "RY.TO",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "MCDONALDS CORP",
+      "weightPercent": 0.2255,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "MCD",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ABBOTT LABORATORIES",
+      "weightPercent": 0.2254,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "ABT",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "THERMO FISHER SCIENTIFIC INC",
+      "weightPercent": 0.2248,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "TMO",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "LAM RESEARCH CORP",
+      "weightPercent": 0.223,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "LRCX",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "CITIGROUP INC",
+      "weightPercent": 0.2217,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "C",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "SIEMENS N AG",
+      "weightPercent": 0.2208,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1,
+      "tickerCandidate": "SIE.DE",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "MORGAN STANLEY",
+      "weightPercent": 0.2197,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "MS",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "SHELL PLC",
+      "weightPercent": 0.2192,
+      "currencies": [
+        "GBP"
+      ],
+      "positions": 1,
+      "tickerCandidate": "SHEL.L",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "AMERICAN EXPRESS",
+      "weightPercent": 0.2135,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "AXP",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "APPLIED MATERIAL INC",
+      "weightPercent": 0.2124,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "AMAT",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "WALT DISNEY",
+      "weightPercent": 0.2103,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "DIS",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "TOYOTA MOTOR CORP",
+      "weightPercent": 0.2089,
+      "currencies": [
+        "JPY"
+      ],
+      "positions": 1,
+      "tickerCandidate": "7203.T",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "INTUITIVE SURGICAL INC",
+      "weightPercent": 0.2087,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "ISRG",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "LINDE PLC",
+      "weightPercent": 0.2068,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "LIN",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "PEPSICO INC",
+      "weightPercent": 0.2028,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "PEP",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "SHOPIFY  INC",
+      "weightPercent": 0.2022,
+      "currencies": [
+        "CAD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "SHOP.TO",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "LVMH",
+      "weightPercent": 0.1953,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1,
+      "tickerCandidate": "MC.PA",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "INTUIT INC",
+      "weightPercent": 0.1909,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "INTU",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "QUALCOMM INC",
+      "weightPercent": 0.1905,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "QCOM",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "MITSUBISHI UFJ FINANCIAL GROUP INC",
+      "weightPercent": 0.1885,
+      "currencies": [
+        "JPY"
+      ],
+      "positions": 1,
+      "tickerCandidate": "8306.T",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "GE VERNOVA INC",
+      "weightPercent": 0.1844,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "GEV",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "COMMONWEALTH BANK OF AUSTRALIA",
+      "weightPercent": 0.1843,
+      "currencies": [
+        "AUD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "CBA.AX",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "AT&T INC",
+      "weightPercent": 0.1839,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "T",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ALLIANZ",
+      "weightPercent": 0.1829,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1,
+      "tickerCandidate": "ALV.DE",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "BANCO SANTANDER SA",
+      "weightPercent": 0.1827,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1,
+      "tickerCandidate": "SAN.MC",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "AMGEN INC",
+      "weightPercent": 0.1817,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "AMGN",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "BOOKING HOLDINGS INC",
+      "weightPercent": 0.18,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "BKNG",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "CHARLES SCHWAB CORP",
+      "weightPercent": 0.1782,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "SCHW",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "VERIZON COMMUNICATIONS INC",
+      "weightPercent": 0.1775,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "VZ",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "TJX INC",
+      "weightPercent": 0.177,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "TJX",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "INTEL CORPORATION CORP",
+      "weightPercent": 0.1734,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "INTC",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ACCENTURE PLC",
+      "weightPercent": 0.1705,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "ACN",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "NOVO NORDISK",
+      "weightPercent": 0.1703,
+      "currencies": [
+        "DKK"
+      ],
+      "positions": 1,
+      "tickerCandidate": "NOVO-B.CO",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "NEXTERA ENERGY INC",
+      "weightPercent": 0.1699,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "NEE",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "S&P GLOBAL INC",
+      "weightPercent": 0.1698,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "SPGI",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "AMPHENOL CORP",
+      "weightPercent": 0.1694,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "APH",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "UBER TECHNOLOGIES INC",
+      "weightPercent": 0.1675,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "UBER",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "KLA CORP",
+      "weightPercent": 0.1665,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "KLAC",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "TORONTO DOMINION",
+      "weightPercent": 0.1663,
+      "currencies": [
+        "CAD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "TD.TO",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "SERVICENOW INC",
+      "weightPercent": 0.1658,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "NOW",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "TEXAS INSTRUMENT INC",
+      "weightPercent": 0.1636,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "TXN",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "BLACKROCK INC",
+      "weightPercent": 0.1626,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "BLK",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "SONY GROUP CORP",
+      "weightPercent": 0.1621,
+      "currencies": [
+        "JPY"
+      ],
+      "positions": 1,
+      "tickerCandidate": "6758.T",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "BHP GROUP LTD",
+      "weightPercent": 0.16,
+      "currencies": [
+        "AUD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "BHP.AX",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "APPLOVIN CORP",
+      "weightPercent": 0.1593,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "APP",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "CAPITAL ONE FINANCIAL CORP",
+      "weightPercent": 0.1585,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "COF",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "GILEAD SCIENCES INC",
+      "weightPercent": 0.1584,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "GILD",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "SCHNEIDER ELECTRIC",
+      "weightPercent": 0.1563,
+      "currencies": [
+        "EUR"
+      ],
+      "positions": 1,
+      "tickerCandidate": "SU.PA",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "DANAHER CORP",
+      "weightPercent": 0.1534,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "DHR",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "UBS GROUP AG",
+      "weightPercent": 0.152,
+      "currencies": [
+        "CHF"
+      ],
+      "positions": 1,
+      "tickerCandidate": "UBSG.SW",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "ADOBE INC",
+      "weightPercent": 0.1518,
+      "currencies": [
+        "USD"
+      ],
+      "positions": 1,
+      "tickerCandidate": "ADBE",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    },
+    {
+      "name": "HITACHI LTD",
+      "weightPercent": 0.1487,
+      "currencies": [
+        "JPY"
+      ],
+      "positions": 1,
+      "tickerCandidate": "6501.T",
+      "tickerStatus": "needs_verification",
+      "tickerProvider": "Yahoo Finance symbol format (candidate)"
+    }
+  ],
+  "tickerMappingStatus": "candidates_only_not_verified",
+  "notes": [
+    "Tickers zijn voorgestelde symbolen, niet geverifieerd bij een koersdatabron.",
+    "Alphabet bestaat uit twee aandelenklassen; GOOGL is slechts een voorlopige representatieve ticker, niet een berekend gecombineerd rendement.",
+    "Valuta en notering moeten worden gecontroleerd; rendementen in lokale valuta zijn niet gelijk aan rendementen in EUR.",
+    "Geen koersgegevens of maandrendementen opgenomen."
+  ]
+}
