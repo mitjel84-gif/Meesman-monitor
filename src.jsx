@@ -208,7 +208,7 @@ function Rankings({ ranking, setRanking }) {
 
   const RankingList = ({ title, items, positive }) => (
     <section className="ranking-section">
-      <div className={ranking-title ${positive ? 'positive' : ''}}>
+      <div className={'ranking-title ' + (positive ? 'positive' : '')}>
         <div className="ranking-icon">
           {positive
             ? <TrendingUp size={19}/>
