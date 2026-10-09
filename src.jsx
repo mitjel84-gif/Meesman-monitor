@@ -141,6 +141,19 @@ function Overview({setPage, period, setPeriod}) {
       <Stat icon={Wallet} label="Kostenindicatie" value="0,40%" sub="Controleer actuele fondsdocumenten"/>
     </div>
     <FundPriceChart period={period}/>
+    <div className="panel" style={{padding: '20px', marginTop: '20px', marginBottom: '20px'}}>
+  <h2>Dividendoverzicht – Serie A</h2>
+  <p>Historische dividenduitkeringen per participatie.</p>
+  <p><strong>Totaal uitgekeerd: € 4,4816</strong></p>
+  <p>2026: € 0,8340</p>
+  <p>2025: € 0,9387</p>
+  <p>2024: € 0,5928</p>
+  <p>2023: € 0,7817</p>
+  <p>2022: € 0,5140</p>
+  <p>2021: € 0,3497</p>
+  <p>2020: € 0,4707</p>
+  <small>Bedragen per participatie, niet jouw persoonlijke dividendontvangsten.</small>
+</div>
     <div className="section-heading"><div><h2>Grootste beleggingen</h2><p>Gewicht in het fonds · officieel overzicht per {holdingDate}</p></div><button className="text-button" onClick={() => setPage('Aandelen')}>Alle posities <ChevronRight size={16}/></button></div>
     <div className="panel holdings-panel">
       {holdings.slice(0,5).map((h,i)=><div className="holding-row" key={h.id}><div className="rank-number">{String(i+1).padStart(2,'0')}</div><div className="company-monogram">{h.name.slice(0,1)}</div><div className="holding-info"><b>{h.name}</b><span>{h.currency}</span><div className="weight-track"><div style={{width:`${h.weight/maxWeight*100}%`}}/></div></div><div className="holding-weight">{formatWeight(h.weight)}</div></div>)}
