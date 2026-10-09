@@ -1,20 +1,40 @@
 {
   "fund": "Meesman Aandelen Wereldwijd Totaal",
   "holdingsDate": "2025-12-31",
-  "generatedAt": "2026-10-09T19:55:21.590227+00:00",
+  "generatedAt": "2026-10-09T20:04:18.561178+00:00",
   "period": "ongeveer 1 maand (30 kalenderdagen, handelsdagen)",
   "method": "Aangepaste slotkoersen in lokale noteringsvaluta; geen valutaomrekening naar EUR",
   "universeCount": 100,
-  "calculatedCount": 0,
+  "calculatedCount": 1,
   "complete": false,
   "status": "incomplete",
-  "topGainers": [],
-  "topLosers": [],
-  "skipped": [
+  "topGainers": [
     {
       "name": "NVIDIA CORP",
-      "reason": "Beurscode nog niet gecontroleerd"
-    },
+      "ticker": "NVDA",
+      "currency": "USD",
+      "weightPercent": 4.679,
+      "startDate": "2026-09-09",
+      "endDate": "2026-10-09",
+      "startPrice": 223.419998,
+      "endPrice": 229.279999,
+      "returnPercent": 2.6229
+    }
+  ],
+  "topLosers": [
+    {
+      "name": "NVIDIA CORP",
+      "ticker": "NVDA",
+      "currency": "USD",
+      "weightPercent": 4.679,
+      "startDate": "2026-09-09",
+      "endDate": "2026-10-09",
+      "startPrice": 223.419998,
+      "endPrice": 229.279999,
+      "returnPercent": 2.6229
+    }
+  ],
+  "skipped": [
     {
       "name": "APPLE INC",
       "reason": "Beurscode nog niet gecontroleerd"
