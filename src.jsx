@@ -163,15 +163,230 @@ function Holdings({filtered,query,setQuery}) {
     <div className="notice"><ShieldAlert size={19}/><div><b>Peildatum: {holdingDate}</b><p>Deze lijst wordt nog niet automatisch bijgewerkt. De bron vermeldt bedrijfsnamen en valuta, maar geen beurscodes of koersrendementen.</p></div></div>
   </>
 }
-function Rankings({period,setPeriod,metric,setMetric,ranking,setRanking}) {
-  return <>
-    <PageHeading eyebrow="RENDEMENTANALYSE" title="Stijgers & dalers" description="Vergelijk aandelen over een gelijke periode met dezelfde rendementsmethode."/>
-    <div className="panel controls-panel"><div className="field"><label>Periode</label><select value={period} onChange={e=>setPeriod(e.target.value)}>{periods.map(p=><option key={p}>{p}</option>)}</select></div><div className="field"><label>Rendementstype</label><select value={metric} onChange={e=>setMetric(e.target.value)}><option>Koersrendement</option><option>Totaalrendement incl. dividend</option></select></div><div className="segmented">{['Beide','Stijgers','Dalers'].map(r=><button key={r} onClick={()=>setRanking(r)} className={ranking===r?'selected':''}>{r}</button>)}</div></div>
-    {ranking!=='Dalers'&&<RankingEmpty title="Top 5 best presterende aandelen" positive/>}
-    {ranking!=='Stijgers'&&<RankingEmpty title="Top 5 slechtst presterende aandelen"/>}
-    <DataNotice>Er is nog geen betrouwbare historische databron aangesloten. De app berekent bewust geen top 5 met gefingeerde percentages. Zodra gevalideerde holdings en historische koersen zijn gekoppeld, kan deze pagina de ranglijsten en grafieken tonen.</DataNotice>
-    <div className="panel methodology"><h3>Zo wordt de ranglijst berekend</h3><div className="method-row"><span>1</span><div><b>Peildatum vaststellen</b><p>Welke aandelen zaten in het fonds aan het begin en einde van de periode?</p></div></div><div className="method-row"><span>2</span><div><b>Koersen corrigeren</b><p>Rekening houden met aandelensplitsingen en ontbrekende handelsdagen.</p></div></div><div className="method-row"><span>3</span><div><b>Dividend meenemen</b><p>Bij totaalrendement tellen herbelegde dividenden mee.</p></div></div></div>
-  </>
+function Rankings({ ranking, setRanking }) {
+  const [data, setData] = useState(null)
+  const [status, setStatus] = useState('loading')
+
+  useEffect(() => {
+    const controller = new AbortController()
+
+    fetch(${import.meta.env.BASE_URL}data/stock-rankings.json, {
+      signal: controller.signal,
+      cache: 'no-store'
+    })
+      .then(response => {
+        if (!response.ok) throw new Error('Koersbestand niet gevonden')
+        return response.json()
+      })
+      .then(result => {
+        setData(result)
+        setStatus('ready')
+      })
+      .catch(error => {
+        if (error.name !== 'AbortError') setStatus('error')
+      })
+
+    return () => controller.abort()
+  }, [])
+
+  const gainers = data?.topGainers || []
+  const losers = data?.topLosers || []
+
+  const calculated = data?.calculatedCount ?? 0
+  const total = data?.universeCount ?? 100
+
+  const formatChange = value => {
+    const number = Number(value)
+
+    if (!Number.isFinite(number)) return '—'
+
+    return `${number > 0 ? '+' : ''}${number.toLocaleString('nl-NL', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    })}%`
+  }
+
+  const RankingList = ({ title, items, positive }) => (
+    <section className="ranking-section">
+      <div className={ranking-title ${positive ? 'positive' : ''}}>
+        <div className="ranking-icon">
+          {positive
+            ? <TrendingUp size={19}/>
+            : <TrendingDown size={19}/>}
+        </div>
+
+        <div>
+          <h2>{title}</h2>
+          <p>Koersontwikkeling over ongeveer één maand</p>
+        </div>
+      </div>
+
+      <div className="panel" style={{ padding: 20 }}>
+        {items.length === 0 ? (
+          <p>Geen koersresultaten beschikbaar.</p>
+        ) : (
+          items.slice(0, 5).map((item, index) => {
+            const change = item.returnPercent
+
+            return (
+              <div
+                key={${item.ticker || item.name}-${index}}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  gap: 16,
+                  padding: '15px 0',
+                  borderBottom: index < items.length - 1
+                    ? '1px solid rgba(128,128,128,0.2)'
+                    : 'none'
+                }}
+              >
+                <div>
+                  <b>{index + 1}. {item.name}</b>
+
+                  <div style={{
+                    fontSize: 13,
+                    opacity: 0.7,
+                    marginTop: 4
+                  }}>
+                    {item.ticker || 'Beurscode onbekend'}
+                    {item.currency ? ` · ${item.currency}` : ''}
+                  </div>
+                </div>
+
+                <strong style={{
+                  color: Number(change) >= 0
+                    ? '#16a34a'
+                    : '#dc2626',
+                  fontSize: 19,
+                  whiteSpace: 'nowrap'
+                }}>
+                  {formatChange(change)}
+                </strong>
+              </div>
+            )
+          })
+        )}
+      </div>
+    </section>
+  )
+
+  return (
+    <>
+      <PageHeading
+        eyebrow="RENDEMENTANALYSE"
+        title="Stijgers & dalers"
+        description="De best en slechtst presterende aandelen uit de 100 grootste bedrijven van Meesman."
+      />
+
+      <div className="panel controls-panel">
+        <div className="field">
+          <label>Periode</label>
+          <strong>1 maand</strong>
+        </div>
+
+        <div className="segmented">
+          {['Beide', 'Stijgers', 'Dalers'].map(value => (
+            <button
+              key={value}
+              onClick={() => setRanking(value)}
+              className={ranking === value ? 'selected' : ''}
+            >
+              {value}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {status === 'loading' && (
+        <div className="panel" style={{ padding: 24 }}>
+          Aandelenkoersen laden…
+        </div>
+      )}
+
+      {status === 'error' && (
+        <div className="panel" style={{ padding: 24 }}>
+          De aandelenkoersen konden niet worden geladen.
+          Controleer public/data/stock-rankings.json.
+        </div>
+      )}
+
+      {status === 'ready' && (
+        <>
+          <div
+            className="panel"
+            style={{ padding: 20, marginBottom: 20 }}
+          >
+            <b>
+              Beschikbare koersgegevens: {calculated} van {total} bedrijven
+            </b>
+
+            <p style={{ marginTop: 8 }}>
+              Deze ranglijst is voorlopig onvolledig.
+              Bedrijven zonder gecontroleerde beurscode of
+              bruikbare koersgegevens zijn niet meegenomen.
+            </p>
+
+            {data?.generatedAt && (
+              <p style={{ marginTop: 8, fontSize: 13 }}>
+                Laatst berekend:{' '}
+                {new Date(data.generatedAt).toLocaleString('nl-NL')}
+              </p>
+            )}
+          </div>
+
+          {ranking !== 'Dalers' && (
+            <RankingList
+              title="Top 5 stijgers"
+              items={gainers}
+              positive
+            />
+          )}
+
+          {ranking !== 'Stijgers' && (
+            <RankingList
+              title="Top 5 dalers"
+              items={losers}
+              positive={false}
+            />
+          )}
+
+          <div
+            className="panel methodology"
+            style={{ marginTop: 20 }}
+          >
+            <h3>Over deze berekening</h3>
+
+            <p>
+              Bron: historische beurskoersen via Yahoo Finance.
+              De periode bedraagt ongeveer één maand,
+              gemeten tussen beschikbare handelsdagen.
+            </p>
+
+            <p>
+              De rendementen zijn gebaseerd op aangepaste
+              slotkoersen in de lokale beursvaluta.
+              Er is geen omrekening naar euro toegepast.
+            </p>
+
+            <p>
+              Dit is geen rendement van het Meesman-fonds zelf.
+              Fondswegingen, fondskosten en wisselkoerseffecten
+              zijn niet afzonderlijk verwerkt.
+            </p>
+
+            <p>
+              De beurscodes zijn automatisch op bedrijfsnaam
+              gecontroleerd. De exacte beursnoteringen en
+              aandelenklassen moeten nog definitief worden
+              gevalideerd.
+            </p>
+          </div>
+        </>
+      )}
+    </>
+  )
 }
 function RankingEmpty({title,positive}) {
   return <section className="ranking-section"><div className={`ranking-title ${positive?'positive':''}`}><div className="ranking-icon">{positive?<TrendingUp size={19}/>:<TrendingDown size={19}/>}</div><div><h2>{title}</h2><p>Geen geverifieerde resultaten beschikbaar</p></div></div><div className="panel chart-placeholder"><div className="placeholder-icon"><Activity size={25}/></div><b>Wacht op koersgegevens</b><p>De grafiek verschijnt hier zodra historische marktdata beschikbaar is.</p></div></section>
