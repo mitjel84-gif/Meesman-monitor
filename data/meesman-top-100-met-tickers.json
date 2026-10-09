@@ -13,7 +13,7 @@
       ],
       "positions": 1,
       "tickerCandidate": "NVDA",
-      "tickerStatus": "needs_verification",
+      "tickerStatus": "verified",
       "tickerProvider": "Yahoo Finance symbol format (candidate)"
     },
     {
