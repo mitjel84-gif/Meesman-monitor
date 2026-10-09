@@ -170,7 +170,7 @@ function Rankings({ ranking, setRanking }) {
   useEffect(() => {
     const controller = new AbortController()
 
-    fetch(${import.meta.env.BASE_URL}data/stock-rankings.json, {
+    fetch(import.meta.env.BASE_URL + 'data/stock-rankings.json', {
       signal: controller.signal,
       cache: 'no-store'
     })
