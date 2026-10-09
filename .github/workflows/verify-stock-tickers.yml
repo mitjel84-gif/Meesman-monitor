@@ -1,0 +1,36 @@
+name: Controleer beurscodes Top 100
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify-tickers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository ophalen
+        uses: actions/checkout@v4
+
+      - name: Python installeren
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Benodigde pakketten installeren
+        run: pip install yfinance
+
+      - name: Beurscodes controleren
+        run: python scripts/verify_stock_tickers.py
+
+      - name: Gecontroleerde beurscodes opslaan
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/meesman-top-100-met-tickers.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Controleer beurscodes Top 100"
+            git push
+          fi
