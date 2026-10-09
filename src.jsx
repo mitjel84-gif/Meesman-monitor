@@ -11,19 +11,17 @@ import {
   ReferenceLine
 } from 'recharts'
 import './style.css'
+import holdingsData from './data/holdings-full.json'
 
-const holdings = [
-  { name: 'NVIDIA', ticker: 'NVDA', weight: 4.6 },
-  { name: 'Apple', ticker: 'AAPL', weight: 4.0 },
-  { name: 'Alphabet', ticker: 'GOOGL / GOOG', weight: 3.3 },
-  { name: 'Microsoft', ticker: 'MSFT', weight: 2.8 },
-  { name: 'Amazon', ticker: 'AMZN', weight: 2.2 },
-  { name: 'Broadcom', ticker: 'AVGO', weight: 1.5 },
-  { name: 'Taiwan Semiconductor', ticker: 'TSM', weight: 1.4 },
-  { name: 'Meta Platforms', ticker: 'META', weight: 1.4 },
-  { name: 'Tesla', ticker: 'TSLA', weight: 1.1 },
-  { name: 'JPMorgan Chase', ticker: 'JPM', weight: 0.9 },
-]
+const holdings = holdingsData.holdings.map((h, index) => ({
+  ...h,
+  id: index,
+  weight: Number(h.weightPercent) || 0,
+  ticker: h.currency || '—',
+})).sort((a, b) => b.weight - a.weight)
+const maxWeight = Math.max(...holdings.map(h => h.weight), 0.001)
+const holdingDate = new Date(`${holdingsData.holdingsDate}T12:00:00`).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' })
+const formatWeight = value => value.toLocaleString('nl-NL', { minimumFractionDigits: 4, maximumFractionDigits: 4 }) + '%'
 const periods = ['Dit jaar', '12 maanden', '3 jaar', '5 jaar']
 const money = n => new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(n)
 
@@ -34,7 +32,7 @@ function App() {
   const [ranking, setRanking] = useState('Beide')
   const [query, setQuery] = useState('')
   const [mobileMenu, setMobileMenu] = useState(false)
-  const filtered = useMemo(() => holdings.filter(h => `${h.name} ${h.ticker}`.toLowerCase().includes(query.toLowerCase())), [query])
+  const filtered = useMemo(() => holdings.filter(h => `${h.name} ${h.currency}`.toLowerCase().includes(query.toLowerCase())), [query])
   const nav = [
     { name: 'Overzicht', icon: LayoutDashboard },
     { name: 'Aandelen', icon: ChartNoAxesCombined },
@@ -94,13 +92,13 @@ function Overview({setPage, period, setPeriod}) {
     </div>
     <div className="stats-grid">
       <Stat icon={Globe2} label="Spreiding" value="Wereldwijd" sub="Ontwikkelde & opkomende markten"/>
-      <Stat icon={ChartNoAxesCombined} label="Voorbeeldposities" value="10 grootste" sub="Niet de volledige portefeuille"/>
+      <Stat icon={ChartNoAxesCombined} label="Beleggingen" value={holdings.length.toLocaleString('nl-NL')} sub={`Peildatum ${holdingDate}`}/>
       <Stat icon={Wallet} label="Kostenindicatie" value="0,40%" sub="Controleer actuele fondsdocumenten"/>
     </div>
-    <div className="section-heading"><div><h2>Grootste voorbeeldposities</h2><p>Gewicht in het fonds · indicatieve voorbeelddata</p></div><button className="text-button" onClick={() => setPage('Aandelen')}>Alle posities <ChevronRight size={16}/></button></div>
+    <div className="section-heading"><div><h2>Grootste beleggingen</h2><p>Gewicht in het fonds · officieel overzicht per {holdingDate}</p></div><button className="text-button" onClick={() => setPage('Aandelen')}>Alle posities <ChevronRight size={16}/></button></div>
     <div className="panel holdings-panel">
-      {holdings.slice(0,5).map((h,i)=><div className="holding-row" key={h.ticker}><div className="rank-number">{String(i+1).padStart(2,'0')}</div><div className="company-monogram">{h.name.slice(0,1)}</div><div className="holding-info"><b>{h.name}</b><span>{h.ticker}</span><div className="weight-track"><div style={{width:`${h.weight/4.6*100}%`}}/></div></div><div className="holding-weight">{h.weight.toLocaleString('nl-NL')}%</div></div>)}
-      <div className="small-disclaimer">*Bovenstaande gewichten zijn illustratief en kunnen afwijken van de actuele portefeuille. Laatste officiële peildatum moet nog worden gecontroleerd.</div>
+      {holdings.slice(0,5).map((h,i)=><div className="holding-row" key={h.id}><div className="rank-number">{String(i+1).padStart(2,'0')}</div><div className="company-monogram">{h.name.slice(0,1)}</div><div className="holding-info"><b>{h.name}</b><span>{h.currency}</span><div className="weight-track"><div style={{width:`${h.weight/maxWeight*100}%`}}/></div></div><div className="holding-weight">{formatWeight(h.weight)}</div></div>)}
+      <div className="small-disclaimer">Bron: Meesman, overzicht alle beleggingen per {holdingDate}. Dit is een momentopname, geen live portefeuille.</div>
     </div>
     <div className="section-heading"><div><h2>Analyse instellen</h2><p>Kies hoe je de prestaties wilt vergelijken.</p></div></div>
     <div className="panel filter-panel"><div className="field"><label>Periode</label><select value={period} onChange={e=>setPeriod(e.target.value)}>{periods.map(p=><option key={p}>{p}</option>)}</select></div><div className="filter-explain"><CircleHelp size={18}/><span>De app toont geen verzonnen rendementen. De ranglijst wordt pas berekend wanneer historische koersdata is aangesloten.</span></div><button className="button primary" onClick={() => setPage('Stijgers & dalers')}>Open rendementanalyse <ChevronRight size={17}/></button></div>
@@ -111,10 +109,10 @@ function Overview({setPage, period, setPeriod}) {
 function Stat({icon:Icon,label,value,sub}) {return <div className="stat-card"><div className="stat-icon"><Icon size={19}/></div><span className="stat-label">{label}</span><b className="stat-value">{value}</b><span className="stat-sub">{sub}</span></div>}
 function Holdings({filtered,query,setQuery}) {
   return <>
-    <PageHeading eyebrow="FONDSOPBOUW" title="Aandelen in het fonds" description="Zoek in de voorbeeldlijst van grote posities. De actuele volledige portefeuille is nog niet gekoppeld."/>
-    <div className="toolbar"><div className="searchbox"><Search size={18}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Zoek bedrijf of ticker…"/></div><span className="result-count">{filtered.length} resultaten</span></div>
-    <div className="panel table-panel"><div className="table-scroll"><table><thead><tr><th>#</th><th>Bedrijf</th><th>Ticker</th><th className="align-right">Indicatief gewicht</th><th>Portefeuille-aandeel</th></tr></thead><tbody>{filtered.map((h,i)=><tr key={h.ticker}><td className="muted">{String(i+1).padStart(2,'0')}</td><td><b>{h.name}</b></td><td><span className="ticker">{h.ticker}</span></td><td className="align-right"><b>{h.weight.toLocaleString('nl-NL')}%</b></td><td><div className="weight-track wide"><div style={{width:`${h.weight/4.6*100}%`}}/></div></td></tr>)}</tbody></table></div>{filtered.length===0&&<div className="empty">Geen aandelen gevonden. Probeer een andere zoekterm.</div>}<div className="panel-foot"><ShieldAlert size={16}/> Voorbeelddata; geen geverifieerde actuele holdings. Gebruik de officiële factsheet voor de actuele samenstelling.</div></div>
-    <DataNotice>De app bevat op dit moment alleen een kleine voorbeeldlijst. Voor een volledig overzicht moet een actuele holdings-export van Meesman worden geïmporteerd en periodiek bijgewerkt.</DataNotice>
+    <PageHeading eyebrow="FONDSOPBOUW" title="Aandelen in het fonds" description={`Doorzoek de beleggingen uit het officiële Meesman-overzicht per ${holdingDate}.`}/>
+    <div className="toolbar"><div className="searchbox"><Search size={18}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Zoek bedrijf of valuta…"/></div><span className="result-count">{filtered.length} resultaten</span></div>
+    <div className="panel table-panel"><div className="table-scroll"><table><thead><tr><th>#</th><th>Bedrijf</th><th>Valuta</th><th className="align-right">Gewicht</th><th>Portefeuille-aandeel</th></tr></thead><tbody>{filtered.map((h,i)=><tr key={h.id}><td className="muted">{String(i+1).padStart(2,'0')}</td><td><b>{h.name}</b></td><td><span className="ticker">{h.currency}</span></td><td className="align-right"><b>{formatWeight(h.weight)}</b></td><td><div className="weight-track wide"><div style={{width:`${h.weight/maxWeight*100}%`}}/></div></td></tr>)}</tbody></table></div>{filtered.length===0&&<div className="empty">Geen aandelen gevonden. Probeer een andere zoekterm.</div>}<div className="panel-foot"><ShieldAlert size={16}/> Officiële momentopname per {holdingDate}; de samenstelling kan sindsdien veranderd zijn.</div></div>
+    <div className="notice"><ShieldAlert size={19}/><div><b>Peildatum: {holdingDate}</b><p>Deze lijst wordt nog niet automatisch bijgewerkt. De bron vermeldt bedrijfsnamen en valuta, maar geen beurscodes of koersrendementen.</p></div></div>
   </>
 }
 function Rankings({period,setPeriod,metric,setMetric,ranking,setRanking}) {
