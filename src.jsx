@@ -225,7 +225,7 @@ function DividendOverview() {
   }
 
   const total = Object.values(perYear).reduce((sum, value) => sum + value, 0);
-  const euro = value => € ${value.toFixed(4).replace('.', ',')};
+  const euro = value => '€ ' + value.toFixed(4).replace('.', ',');
 
   return (
     <div className="panel" style={{padding: '20px', marginTop: '20px', marginBottom: '20px'}}>
